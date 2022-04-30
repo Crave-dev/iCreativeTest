@@ -1,0 +1,45 @@
+.wrapper {
+  margin: 1rem 1.5rem;
+}
+
+.place_header {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    > div {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .box-filter {
+    display: flex;
+    gap: 1rem;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      width: 100%;
+      gap: .75rem;
+    }
+
+    .card {
+      width: 100%;
+    }
+  }
+}
+
+.content {
+  display: grid;
+  margin-top: 1rem;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}
