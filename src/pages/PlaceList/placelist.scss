@@ -43,3 +43,38 @@
     grid-template-columns: 1fr;
   }
 }
+
+.card_img-header {
+  max-width: 60px;
+  width: 10vw;
+  max-height: 60px;
+  height: 10vw;
+
+  & img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 0 solid;
+    border-radius: 10%;
+  }
+}
+
+.card_header {
+  display: flex;
+  width: 100%;
+  padding: 3px;
+  gap: 8px;
+}
+
+.card_name {
+  flex-grow: 1;
+  padding-right: 1rem;
+
+  .card_name-detail {
+    display: flex;
+    justify-content: space-between;
+
+    div:nth-child(2) {
+      color: #134B8A;
+    }
+  }
+}

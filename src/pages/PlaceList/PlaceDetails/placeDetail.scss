@@ -1,0 +1,51 @@
+.detail_wrapper {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #C4E3E9;
+  border: 0 solid #C4E3E9;
+  border-radius: 1%;
+
+  .detail_content {
+    background-color: #FFF;
+    border: 0 solid;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    > div {
+      margin: auto;
+      font-size: 1rem;
+      font-weight: bold;
+
+      > p {
+        font-weight: initial;
+      }
+    }
+  }
+}
+
+.profile_img {
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+  aspect-ratio: 16/9;
+  width: 100%;
+  object-fit: cover;
+  border: 0 solid;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.back_button {
+  color: #FFF !important;
+  border-radius: 50vh !important;
+  background-color: #134B8A !important;
+  padding: 10px !important;
+  margin-bottom: 1rem !important;
+}
+
+.title {
+  font-size: 3rem !important; 
+}

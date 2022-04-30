@@ -1,7 +1,7 @@
 import './placelist.scss'
 import dataJson from '../../../data.json'
 import { ChangeEvent, useMemo, useRef, useState } from 'react'
-import { Card, FormControl, MenuItem, Select, SelectChangeEvent, TextField} from '@mui/material'
+import { FormControl, MenuItem, Select, SelectChangeEvent, TextField} from '@mui/material'
 import PlaceCard from './PlaceCard'
 
 export interface Place {
