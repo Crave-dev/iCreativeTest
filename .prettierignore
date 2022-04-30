@@ -1,0 +1,10 @@
+*.*
+!*.json
+!*.md
+
+node_modules/
+build/
+dist/
+lib/
+
+pnpm-lock.yaml
