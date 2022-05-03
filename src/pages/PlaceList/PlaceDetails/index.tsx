@@ -1,5 +1,5 @@
 import './placeDetail.scss'
-import { useMemo, useRef } from 'react'
+import { useId, useMemo, useRef } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import dataJson from '../../../../data.json'
 import { Button } from '@mui/material'
@@ -21,8 +21,8 @@ export default function PlaceDetails(){
         <div className="title">{dataDetail?.name}</div>
         <div>Address : <p>{dataDetail?.address}</p></div>
         <div>Opening Hour : { 
-          dataDetail?.operation_time.map(t => (
-            <p>
+          dataDetail?.operation_time.map((t, idx) => (
+            <p key={idx}>
               <span>{t.day}</span>
               <span>{t.time_open} - {t.time_close}</span>
             </p>
